@@ -1,0 +1,180 @@
+ var Siri = {
+        "ServiceDelivery": {
+            "ResponseTimestamp": "2018-12-01T18:25:51.418-05:00",
+            "StopMonitoringDelivery": [
+                {
+                    "MonitoredStopVisit": [
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_B54",
+                                "DirectionRef": "1",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2018-12-01",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_FP_K8-Saturday-108500_B54_208"
+                                },
+                                "JourneyPatternRef": "MTA_B540071",
+                                "PublishedLineName": "B54",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_505218",
+                                "DestinationRef": "MTA_801134",
+                                "DestinationName": "DNTWN BKLYN JAY ST via MYRTLE",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.936,
+                                    "Latitude": 40.696892
+                                },
+                                "Bearing": 186.26237,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_FP_K8-Saturday_A_FP_64380_B54-208",
+                                "VehicleRef": "MTA NYCT_6498",
+                                "MonitoredCall": {
+                                    "ExpectedArrivalTime": "2018-12-01T18:39:09.512-05:00",
+                                    "ExpectedDepartureTime": "2018-12-01T18:39:09.512-05:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "1.5 miles away",
+                                            "DistanceFromCall": 2429.57,
+                                            "StopsFromCall": 10,
+                                            "CallDistanceAlongRoute": 4672.9
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_304440",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "MYRTLE AV/GRAND AV"
+                                },
+                                "OnwardCalls": {}
+                            },
+                            "RecordedAtTime": "2018-12-01T18:25:38.000-05:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_B54",
+                                "DirectionRef": "1",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2018-12-01",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_FP_K8-Saturday-110000_B54_207"
+                                },
+                                "JourneyPatternRef": "MTA_B540071",
+                                "PublishedLineName": "B54",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_505218",
+                                "DestinationRef": "MTA_801134",
+                                "DestinationName": "DNTWN BKLYN JAY ST via MYRTLE",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.916998,
+                                    "Latitude": 40.698933
+                                },
+                                "Bearing": 185.71059,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_FP_K8-Saturday_A_FP_53340_B54-207",
+                                "VehicleRef": "MTA NYCT_7280",
+                                "MonitoredCall": {
+                                    "ExpectedArrivalTime": "2018-12-01T18:48:46.087-05:00",
+                                    "ExpectedDepartureTime": "2018-12-01T18:48:46.087-05:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "2.5 miles away",
+                                            "DistanceFromCall": 4047.61,
+                                            "StopsFromCall": 19,
+                                            "CallDistanceAlongRoute": 4672.9
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_304440",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "MYRTLE AV/GRAND AV"
+                                },
+                                "OnwardCalls": {}
+                            },
+                            "RecordedAtTime": "2018-12-01T18:25:32.000-05:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_B54",
+                                "DirectionRef": "1",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2018-12-01",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_FP_K8-Saturday-113000_B54_210"
+                                },
+                                "JourneyPatternRef": "MTA_B540071",
+                                "PublishedLineName": "B54",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_505218",
+                                "DestinationRef": "MTA_801134",
+                                "DestinationName": "DNTWN BKLYN JAY ST via MYRTLE",
+                                "OriginAimedDepartureTime": "2018-12-01T18:50:00.000-05:00",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.942194,
+                                    "Latitude": 40.696165
+                                },
+                                "Bearing": 6.340192,
+                                "ProgressRate": "normalProgress",
+                                "ProgressStatus": "prevTrip",
+                                "BlockRef": "MTA NYCT_FP_K8-Saturday_A_FP_60780_B54-210",
+                                "VehicleRef": "MTA NYCT_4043",
+                                "MonitoredCall": {
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "4.7 miles away",
+                                            "DistanceFromCall": 7557.65,
+                                            "StopsFromCall": 35,
+                                            "CallDistanceAlongRoute": 4672.9
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_304440",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "MYRTLE AV/GRAND AV"
+                                },
+                                "OnwardCalls": {}
+                            },
+                            "RecordedAtTime": "2018-12-01T18:25:38.000-05:00"
+                        }
+                    ],
+                    "ResponseTimestamp": "2018-12-01T18:25:51.418-05:00",
+                    "ValidUntil": "2018-12-01T18:26:51.418-05:00"
+                }
+            ],
+            "SituationExchangeDelivery": []
+        }
+    }
+
+
+
+    console.log (Siri.ServiceDelivery.StopMonitoringDelivery[0].MonitoredStopVisit[0].MonitoredVehicleJourney.DestinationName)  #bus name
+    console.log (Siri.ServiceDelivery.StopMonitoringDelivery[0].MonitoredStopVisit[0].MonitoredVehicleJourney.MonitoredCall.ExpectedArrivalTime) #arrive single bus
+
+    console.log (Siri.ServiceDelivery.StopMonitoringDelivery[0].MonitoredStopVisit[0] #loop through these arrays 1,2,3
+   
+    var UpcomingBuses = Siri.ServiceDelivery.StopMonitoringDelivery #one of many
+    UpcomingBuses.length
+
+    //inject JQ
+    var jQueryScript = document.createElement('script');  
+jQueryScript.setAttribute('src','https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js');
+document.head.appendChild(jQueryScript);
+
+    $.getJSON("http://bustime.mta.info/api/siri/stop-monitoring.json?key=cad01925-1c6e-4b12-99e2-cb9706637b44&OperatorRef=MTA&MonitoringRef=304440",
+    function(data){
+      console.log(data)
+      });
+    
+
+    //loop the buses show the destination signs
+    for(var i = 0; i < UpcomingBuses.length; i++) {
+        var obj = UpcomingBuses[i];
+    
+        console.log(obj.MonitoredVehicleJourney.DestinationName);
+    }
+
+
+    //loop the buses show the expected arrival times
+    for(var i = 0; i < UpcomingBuses.length; i++) {
+        var obj = UpcomingBuses[i];
+    
+        console.log(obj.MonitoredVehicleJourney.MonitoredCall.ExpectedArrivalTime);
+    }
+

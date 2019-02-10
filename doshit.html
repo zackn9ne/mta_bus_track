@@ -1,0 +1,84 @@
+<html>
+    <head></head>
+    <body>hiya.. toggle the CROSSSITE plugin
+        <script>
+        setTimeout(function(){
+        window.location.reload(1);
+        }, 10000);
+
+        //func to allow json from URL
+        var getJSON = function(url, callback) {
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', url, true);
+            xhr.responseType = 'json';
+            xhr.onload = function() {
+            var status = xhr.status;
+            if (status === 200) {
+                callback(null, xhr.response);
+            } else {
+                callback(status, xhr.response);
+            }
+            };
+            xhr.send();
+        };
+
+        bussesToQuery = [304440, 306760]
+        //loop the buses to query
+        for(var i = 0; i < bussesToQuery.length; i++) {
+            var bus = bussesToQuery[i];
+            getJSON('http://bustime.mta.info/api/siri/stop-monitoring.json?key=cad01925-1c6e-4b12-99e2-cb9706637b44&OperatorRef=MTA&MonitoringRef=' + bussesToQuery[i],
+        function(err, data) {
+        if (err !== null) {
+            alert('Something went wrong: ' + err);
+        } else {
+            console.log(data);
+            var Siri = data.Siri
+            console.log(Siri)
+            document.write (Siri.ServiceDelivery.StopMonitoringDelivery[0].MonitoredStopVisit[0].MonitoredVehicleJourney.DestinationName)  //bus name
+            var UpcomingBuses = Siri.ServiceDelivery.StopMonitoringDelivery[0].MonitoredStopVisit //one of many
+            document.write (UpcomingBuses.length + " Busses Found")
+            document.write (Siri.ServiceDelivery.StopMonitoringDelivery[0].MonitoredStopVisit[0].MonitoredVehicleJourney.PublishedLineName)
+
+                //loop the buses show the destination signs
+
+            //loop the buses show the expected arrival times
+            for(var i = 0; i < UpcomingBuses.length; i++) {
+                var obj = UpcomingBuses[i];
+                var incomingBusNode = obj.MonitoredVehicleJourney.MonitoredCall
+                document.write("<li>Bus " + [i+1] + " " + incomingBusNode.ExpectedArrivalTime + " " + incomingBusNode.Extensions.Distances.PresentableDistance +"</li>");
+            }
+
+
+
+
+        }
+        })
+        }
+        // getJSON('http://bustime.mta.info/api/siri/stop-monitoring.json?key=cad01925-1c6e-4b12-99e2-cb9706637b44&OperatorRef=MTA&MonitoringRef=304440',
+        // function(err, data) {
+        // if (err !== null) {
+        //     alert('Something went wrong: ' + err);
+        // } else {
+        //     console.log(data);
+        //     var Siri = data.Siri
+        //     console.log(Siri)
+        //     document.write (Siri.ServiceDelivery.StopMonitoringDelivery[0].MonitoredStopVisit[0].MonitoredVehicleJourney.DestinationName)  //bus name
+        //     var UpcomingBuses = Siri.ServiceDelivery.StopMonitoringDelivery[0].MonitoredStopVisit //one of many
+        //     document.write (UpcomingBuses.length + " Busses Found")
+        //         //loop the buses show the destination signs
+
+
+        //     //loop the buses show the expected arrival times
+        //     for(var i = 0; i < UpcomingBuses.length; i++) {
+        //         var obj = UpcomingBuses[i];
+        //         var incomingBusNode = obj.MonitoredVehicleJourney.MonitoredCall
+        //         document.write("<li>Bus " + [i+1] + " " + incomingBusNode.ExpectedArrivalTime + " " + incomingBusNode.Extensions.Distances.PresentableDistance +"</li>");
+        //     }
+
+        // }
+        // });
+
+        
+        </script>
+    </body>
+</html>
