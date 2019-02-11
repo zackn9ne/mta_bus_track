@@ -68,7 +68,7 @@
         //loop the buses to query
         for(var i = 0; i < bussesToQuery.length; i++) {
             var bus = bussesToQuery[i];
-            getJSON('http://bustime.mta.info/api/siri/stop-monitoring.json?key=cad01925-1c6e-4b12-99e2-cb9706637b44&OperatorRef=MTA&MonitoringRef=' + bussesToQuery[i],
+            getJSON('http://bustime.mta.info/api/siri/stop-monitoring.json?key=$key&OperatorRef=MTA&MonitoringRef=' + bussesToQuery[i],
         function(err, data) {
         if (err !== null) {
             alert('Something went wrong: ' + err);
